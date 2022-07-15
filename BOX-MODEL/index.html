@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        div {
+            /* box-sizing이 border-box이면 content+padding+margin이 width이다.*/
+            /* 보통 레이아웃 잡을때 margin padding 많이 주니까 border-box가 편함 */
+            /* box-sizing: border-box; */
+            /* box-sizing이 content-box이면 content의 넓이가 width이다. */
+            /* 아무것도 지정 안하면 content-box이다. */
+            /* box-sizing: content-box; */
+            /* 박스의 배경 색 */
+            box-sizing: content-box;
+            background-color: yellow;
+            /* 넓이가 300px */
+            width: 300px;
+            height: 100px;
+            /* padding이 25px */
+            padding: 25px;
+            /* border */
+            border: 1px solid gray;
+            /* margin */
+            margin: 25px;
+
+            overflow: hidden;
+            /* 
+               box-sizing이 content-box일때 heigth값을 주게될 떄 
+               content가 height보다 커버리면 흘러 넘쳐버린다. 이때
+               overflow -> hidden 적용한다. 
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Box Model</h2>
+
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.ㅁㄴㅇㅁㄴㅇㅁㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇ
+        ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+        ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ/div>
+</body>
+
+</html>
