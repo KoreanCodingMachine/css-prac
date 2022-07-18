@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-color: #def0c2;
+            /* overflow: hidden; */
+        }
+
+        /*
+         float 프로퍼티가 선언된 자식 요소를 포함하는 부모 요소의 높이가
+         정상적으로 반영되지 않는 문제
+
+         이유:float요소는 일반적인 흐름 상에 존재하지 않기 때문에
+         float 요소의 높이를 알 수 없어서 
+         부모 요소 이후에 위치하는 요소의 정렬에 문제를 일으킨다.
+
+         해결방법:자식요소의 부모요소에 overflow:hidden을 선언한다.
+        */
+        .d1,
+        .d2 {
+            float: left;
+            width: 50%;
+            padding: 20px 0;
+        }
+
+        .d1 {
+            background-color: #59b1f6;
+        }
+
+        .d2 {
+            background-color: #ffb5b4;
+        }
+
+        /* float을 선언한 부모요소에게 가상클래스 붙여줘서 ::after */
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+    </div>
+    <div style="background:red;padding:10px;color:white;">3</div>
+</body>
+
+</html>

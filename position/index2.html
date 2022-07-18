@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .parent {
+            width: 200px;
+            height: 200px;
+            background: #bcbcbc;
+            border: 1px solid #bcbcbc;
+            margin: 50px 0 0 300px;
+            /* absolute box의 기준 */
+            position: relative;
+        }
+
+        .absolute-box {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 50px;
+            left: 50px;
+            color: #e55c3c;
+            font-weight: bold;
+            text-align: center;
+            background: #2E303D;
+            line-height: 200px;
+        }
+
+        .static-box {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            color: #e55c3c;
+            font-weight: bold;
+            text-align: center;
+            background: #2E303D;
+            top: 50px;
+            left: 50px;
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="absolute-box">absolute box (in parent)</div>
+    </div>
+    <div class="absolute-box">absolute box (no parent)</div>
+    <div class="static-box">relative-box</div>
+</body>
+
+</html>

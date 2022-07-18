@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box {
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 50px;
+            height: 50px;
+            margin: 0 10px;
+            padding: 10px;
+        }
+
+        /* 
+        float 선언된 요소와 선언되지 않은 요소간 margin이
+        사라지는 문제
+
+        해결방법
+        float 프로퍼티를 선언하지 않은 요소에게
+        overflow:hidden 프로퍼티를 선언한다.
+        */
+        .d1 {
+            float: left;
+            background: red;
+        }
+
+        .d2 {
+            overflow: hidden;
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box d1"> float: left; </div>
+    <div class="box d2"> div </div>
+</body>
+
+</html>
