@@ -1,0 +1,8 @@
+html {font-size:20px;}
+body {font-size:1rem;}
+
+header {background:#f6f5ef;}
+header > div {
+    width:54.5rem;
+    margin:0 atuo;
+}

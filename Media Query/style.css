@@ -1,0 +1,16 @@
+/* 최대 500px 까지는 안의 규칙을 따라라 */
+@media (max-width:500px){
+
+}
+/* 500 ~ 1000 */
+@media (min-width:500px) and (max-width:1000px){
+    body{
+        background-color:red;
+    }
+}
+
+@media (min-width:1001px){
+    body {
+        background-color:yellow;
+    }
+}

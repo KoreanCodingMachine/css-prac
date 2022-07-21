@@ -1,0 +1,22 @@
+/* 최소 800px 이상은 되어야 */
+
+@media (min-width:800px) {
+    li {
+        display: inline-block;
+        background-color:blue;
+        color:white;
+        width:100px;
+    }
+}
+
+@media screen and (max-width:799px) {
+    li {
+        display: block;
+        margin-top: 20px;
+        background-color:blue;
+        color:white;
+        width:100px;
+    }
+}
+
+
